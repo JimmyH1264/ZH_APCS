@@ -71,7 +71,7 @@ public class DoubloonWords {
                     System.out.println("it is not because not all letters in there are even");
                     //odd letters in even word doesnt work
                 }
-            }bvhhgdhdddhf
+            }
             else{
             System.out.println("Doubloon words' total number of letters are even.");
             //odd number doesnt work

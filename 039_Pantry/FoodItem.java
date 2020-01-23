@@ -1,18 +1,19 @@
 public class FoodItem {
     private String foo1;
-    private int fooNum;
+    private int fooNum1;
     public int amount;
     public void name(String foo1,int fooNum1){
         this.foo1 = foo1;
-        this.fooNum = fooNum;
+        this.fooNum1 = fooNum1;
     }
-    private void eat(int amount){
+    public void eat(int amount){
         this.amount = amount;
-        if (this.amount < fooNum)
+        if (this.amount < fooNum1)
         { 
-            fooNum -= this.amount;
+            fooNum1 -= this.amount;
+            System.out.println("you want to eat some" + foo1 + ", you ate them and you have " + fooNum1 + " left.");
         }else{
-            System.out.println("you dont have enough of it, you have " + fooNum + " chicken.");
+            System.out.println("you dont have enough of it, you have " + fooNum1 + " chicken.");
         }
 
 
@@ -21,13 +22,13 @@ public class FoodItem {
         return foo1;
     }
     public int getAmount() {
-        return fooNum;
+        return fooNum1;
     }
     public static void main(String[] args) {
         FoodItem chicken = new FoodItem();
         chicken.name("Chicken",100);
         System.out.println(chicken.foo1);
-        System.out.println(chicken.fooNum);
+        System.out.println(chicken.fooNum1);
         chicken.eat(2);
     }
 

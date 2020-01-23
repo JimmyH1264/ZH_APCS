@@ -37,14 +37,8 @@ public class CardDispenser2 {
                 break;
             }
         }
+        scan.close();
         break;
     }
 }
-
-
-    public static void main(String[] args) {
-        CardDispenser2 cd = new CardDispenser2();
-        cd.draw();
-        cd.hit();
-    }
 }

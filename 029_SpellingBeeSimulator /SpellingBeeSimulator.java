@@ -27,6 +27,7 @@ public class SpellingBeeSimulator {
                 //else it doesnt need the dash behind it
             }
         }
+        scan.close();
 
 
     }

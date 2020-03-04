@@ -13,6 +13,7 @@ public class CustomCalculator {
         System.out.println(calc.cusTrM(1,3,5));
         System.out.println(calc.QuadraticFP(1,2,1));
         System.out.println(calc.QuadraticFN(1,3,5));
+        // calc is the name of my object
 
     }
     public double cusAdd(double a,double b) {
@@ -51,4 +52,5 @@ public class CustomCalculator {
         double e = (0-b)-Math.sqrt((Math.pow(b,2)-(4*a*c)))/(2*a);
         return e;
     }
+    //those are custom methods
 }

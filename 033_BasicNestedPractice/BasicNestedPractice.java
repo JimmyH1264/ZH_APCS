@@ -15,7 +15,7 @@ public class BasicNestedPractice {
         }else{
             System.out.println("what rows do you want to print");
             row = scan.nextInt();
-            //catching howmany rows you want
+            //catching how many rows you want
             System.out.println("what columns do you want to print");
             col = scan.nextInt();
             //catching how many columns you want
@@ -28,6 +28,7 @@ public class BasicNestedPractice {
                 //make space in rows
             }
         }
+        scan.close();
 
     }
 }

@@ -7,5 +7,6 @@ public class UsingThePhone {
         ph.wifi(1);
         ph.wifi(0);
         ph.call(" 911");
+        //this are just methods for the object ph
     }
 }

@@ -6,6 +6,7 @@ public class ScrabbleCalculator {
         System.out.println("Please type a word :");
         scrabbleW = scan.next();
         scrabbleW = scrabbleW.toLowerCase();
+        //this catches the word and covert anything to lower case
         int maximumA = scrabbleW.length() - scrabbleW.replaceAll("a","").length();
         int maximumB = scrabbleW.length() - scrabbleW.replaceAll("b","").length();
         int maximumC = scrabbleW.length() - scrabbleW.replaceAll("c","").length();
@@ -32,13 +33,16 @@ public class ScrabbleCalculator {
         int maximumX = scrabbleW.length() - scrabbleW.replaceAll("x","").length();
         int maximumY = scrabbleW.length() - scrabbleW.replaceAll("y","").length();
         int maximumZ = scrabbleW.length() - scrabbleW.replaceAll("z","").length();
+        //this will figure out how many of each letters are in the word
         if (maximumA > 9 || maximumB > 2 || maximumC > 2 || maximumD > 4 || maximumE > 12 || maximumF > 2 || maximumG > 3 || maximumH > 2 || maximumI > 9 || maximumJ > 1 || maximumK > 1 || maximumL > 4 || maximumM > 2 || maximumN > 6 || maximumO > 8 || maximumP > 2 || maximumQ > 1 || maximumR > 6 || maximumS > 4 || maximumT > 6 || maximumU > 4 || maximumV > 2 || maximumW > 2 || maximumX > 1 || maximumY > 2 || maximumZ > 1) {
             System.out.println("Your word cant be spelled");
         }
+        //this is from the scrabble dictionary, if the number exceeded this it wont be spelled
         else
         {
             int point = 0;
             int len = scrabbleW.length()-1;
+            //this is for the for loop to cut each letter into one piece
             for (int i = 0; i <= len; i++){
                 String x = scrabbleW.substring(i,i+1);
                 if ((x.equals("a") || x.equals("e") || x.equals("i") || x.equals("o") || x.equals("u") || x.equals("l") || x.equals("n") || x.equals("s") || x.equals("t") || x.equals("r")))
@@ -58,8 +62,10 @@ public class ScrabbleCalculator {
                     point += 10;
                 }
             }
+            //those scores are according the dictionary
             System.out.println(scrabbleW.toLowerCase());
             System.out.println("your word has points of " + point);
+            //this prints the total value each letter added
         }
         scan.close();
 

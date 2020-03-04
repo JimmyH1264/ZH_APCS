@@ -32,6 +32,6 @@ public class Phone2 {
         System.out.println(" you texted" + people + ". Message :" + message);
     }
     public String toString() {
-        return ("this is your phone " + color + model);
+        return ("this is your phone " + color + " " + model);
     }
 }   
